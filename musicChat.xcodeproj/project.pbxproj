@@ -92,6 +92,8 @@
 			dependencies = (
 			);
 			name = musicChat;
+			packageProductDependencies = (
+			);
 			productName = musicChat;
 			productReference = 93F236952AAFF3CE00FEFBF2 /* musicChat.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +122,8 @@
 				Base,
 			);
 			mainGroup = 93F2368C2AAFF3CE00FEFBF2;
+			packageReferences = (
+			);
 			productRefGroup = 93F236962AAFF3CE00FEFBF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
