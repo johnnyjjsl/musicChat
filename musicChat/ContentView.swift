@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var messageText = ""
-    @StateObject var mr = messageRetriever()
     var messages = ["1963", "1979", "1987"]
     var body: some View {
         VStack {
@@ -19,7 +18,7 @@ struct ContentView: View {
             }
             ScrollView {
                 ForEach(messages, id: \.self) {
-                    text in TextMessage(message: Message(id: "0000", text: text, isChatBot: false))
+                    text in TextMessage(message: Message(id: "0000", text: text, isChatBot: false)).foregroundColor(.white)
                 }
             }
             
