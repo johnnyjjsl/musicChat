@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9330BC0F2AB1090600CC8199 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9330BC0E2AB1090600CC8199 /* FirebaseFirestore */; };
+		9330BC112AB1090600CC8199 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9330BC102AB1090600CC8199 /* FirebaseFirestoreSwift */; };
 		937EC2992AB00BD90068B1D6 /* TextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EC2982AB00BD90068B1D6 /* TextMessage.swift */; };
 		93CEC2DB2AB091E9007E707E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93CEC2DA2AB091E8007E707E /* GoogleService-Info.plist */; };
 		93CEC2E22AB0981B007E707E /* messageRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEC2E12AB0981B007E707E /* messageRetriever.swift */; };
@@ -34,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9330BC0F2AB1090600CC8199 /* FirebaseFirestore in Frameworks */,
+				9330BC112AB1090600CC8199 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,8 @@
 			);
 			name = musicChat;
 			packageProductDependencies = (
+				9330BC0E2AB1090600CC8199 /* FirebaseFirestore */,
+				9330BC102AB1090600CC8199 /* FirebaseFirestoreSwift */,
 			);
 			productName = musicChat;
 			productReference = 93F236952AAFF3CE00FEFBF2 /* musicChat.app */;
@@ -126,6 +132,7 @@
 			);
 			mainGroup = 93F2368C2AAFF3CE00FEFBF2;
 			packageReferences = (
+				9330BC0D2AB1090600CC8199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 93F236962AAFF3CE00FEFBF2 /* Products */;
 			projectDirPath = "";
@@ -357,6 +364,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9330BC0D2AB1090600CC8199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9330BC0E2AB1090600CC8199 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9330BC0D2AB1090600CC8199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9330BC102AB1090600CC8199 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9330BC0D2AB1090600CC8199 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F2368D2AAFF3CE00FEFBF2 /* Project object */;
 }
