@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var messageText = ""
-    @State var messages: [String] = ["hello!"]
+    var messages = ["Show me songs from 1963", "How was the year 1979?", "1980"]
     var body: some View {
         VStack {
             HStack {
@@ -17,7 +17,9 @@ struct ContentView: View {
                 Text("musicChat").font(.largeTitle).bold()
             }
             ScrollView {
-                
+                ForEach(messages, id: \.self) {
+                    text in TextMessage(message: Message(id: "0000", text: text, isChatBot: false))
+                }
             }
             
             HStack {
