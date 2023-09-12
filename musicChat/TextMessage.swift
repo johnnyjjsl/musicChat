@@ -15,7 +15,7 @@ struct TextMessage: View {
             HStack {
                 Text(message.text)
                     .padding()
-                    .background(message.isChatBot ? .green: .yellow)
+                    .background(message.isChatBot ? .green: .blue)
                     .cornerRadius(30)
             }.frame(maxWidth: 300, alignment: message.isChatBot ? .leading: .trailing)
         }
