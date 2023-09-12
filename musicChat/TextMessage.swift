@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TextMessage: View {
-    
     var message: Message
     
     var body: some View {

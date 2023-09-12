@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var messageText = ""
-    var messages = ["Show me songs from 1963", "How was the year 1979?", "1980"]
+    @StateObject var mr = messageRetriever()
+    var messages = ["1963", "1979", "1987"]
     var body: some View {
         VStack {
             HStack {
