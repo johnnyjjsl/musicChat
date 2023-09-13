@@ -18,7 +18,7 @@ struct TextMessage: View {
                     .background(message.isChatBot ? .green: .blue)
                     .cornerRadius(30)
             }.frame(maxWidth: 300, alignment: message.isChatBot ? .leading: .trailing)
-        }
+        }.padding().frame(maxWidth: 300, alignment: message.isChatBot ? .leading: .trailing)
     }
 }
 
