@@ -38,11 +38,11 @@ class messageRetriever: ObservableObject {
     func sendResponse(message: String, bots: [Message]) -> String {
         for bot in bots {
             let yearNum = bot.text.firstIndex(of: "!")!
-            let year = bot.text[...yearNum]
+            let year = bot.text[...(yearNum)]
             if year == message {
                 return bot.text
             }
         }
-        return "Not found! Sorry"
+        return "Enter a valid year."
     }
 }

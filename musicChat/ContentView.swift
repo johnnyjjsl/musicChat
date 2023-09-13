@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var messageText = ""
     @State private var mr = messageRetriever()
-    @State var messages = ["Type in a year."]
+    @State var messages = ["Type in a year followed by an exclamation mark!"]
     
     var body: some View {
         VStack {
